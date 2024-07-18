@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Asli Astro</title>
+      <link rel="icon" type="image/x-icon" href="/images/logo-black.png" />
+      <link href="./output.css" rel="stylesheet" />
+      <link
+        href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,401,500,501,600,601,700,701,1,2&display=swap"
+        rel="stylesheet"
+      />
+
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+      <style>
+        .slick-slide {
+          outline: none;
+          /* width: 100%; */
+        }
+        #thumb-slider img {
+          width: 100%;
+          height: 100%;
+          padding: 2rem 1.8rem;
+        }
+
+        .slick-thumb {
+          cursor: pointer;
+        }
+        .slick-next:before,
+        .slick-prev:before {
+          color: darkslategray;
+          font-size: 24px;
+        }
+        .slick-prev {
+          left: -14px;
+        }
+        .slick-next {
+          right: -7px;
+        }
+      </style>
+    </head>
+  </head>
+  <body class="bg-white1">
+    <section
+      class="hero w-screen max-w-full h-max pt-8 bg-bottom-4 md:bg-bottom-5 bg-no-repeat md:pt-2"
+    >
+      <header
+        class="w-[80vw] h-[10vh] m-auto py-8 flex items-center justify-between md:hidden"
+      >
+        <div class="logo">
+          <img
+            src="./images/AsliAstro -black.png"
+            class="mb-4 text-black"
+            alt="logo"
+            srcset=""
+          />
+        </div>
+        <nav class="text-black1 gap-8 flex items-center justify-between">
+          <a href="#shop">Shop</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#contact">Contact</a>
+          <button
+            class="free-session text-white bg-black1 rounded-[35px] py-3 px-4 border border-black1 shadow-3xl"
+          >
+            Claim Your Free Session
+          </button>
+        </nav>
+      </header>
+      <header class="hidden mt-4 md:flex items-center justify-between px-8">
+        <div class="flex items-center justify-start gap-4">
+          <i
+            class="fa-solid fa-bars cursor-pointer text-4xl text-black"
+            id="burger-menu-btn"
+          ></i>
+          <img src="./images/logo-black.png" alt="" />
+        </div>
+        <button
+          class="free-session ml-auto bg-black1 text-white rounded-[35px] py-3 px-4 border border-black1 shadow-3xl"
+        >
+          Claim Your Free Session
+        </button>
+      </header>
+      <div
+        id="burger-menu"
+        class="absolute top-0 left-0 w-4/6 h-screen bg-black1 hidden"
+      >
+        <div class="flex items-center justify-start gap-4 text-white p-4 mt-4">
+          <i
+            id="burger-menu_close_btn"
+            class="fa-solid fa-xmark text-4xl cursor-pointer"
+          ></i>
+          <img
+            src="./images/AsliAstro.png"
+            class="mb-2 text-black"
+            alt="logo"
+            srcset=""
+          />
+        </div>
+        <div
+          class="w-full my-4 border-b-2 border-white border-opacity-50"
+        ></div>
+        <nav class="grid grid-cols-1 gap-4 mt-[5rem] px-8">
+          <span
+            class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+          >
+            <a class="w-full text-xl py-2" href="#shop">Shop</a>
+            <i class="fa-solid text-2xl fa-arrow-right"></i>
+          </span>
+          <span
+            class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+          >
+            <a class="w-full text-xl py-2" href="">Testimonials</a>
+            <i class="fa-solid text-2xl fa-arrow-right"></i>
+          </span>
+          <span
+            class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+          >
+            <a class="w-full text-xl py-2" href="./index.html">Contact</a>
+            <i class="fa-solid text-2xl fa-arrow-right"></i>
+          </span>
+          <button
+            class="free-session text-white my-8 bg-black1 rounded-[35px] py-3 px-4 border border-white border-opacity-50 shadow-3xl"
+          >
+            Claim Your Free Session
+          </button>
+        </nav>
+      </div>
+
+      <div
+        class="my-8 px-16 md:px-8 md:py-8 flex items-center justify-between md:flex-col gap-2 w-[90%] md:h-fit h-[300px] rounded-xl mx-auto bg-gradient-to-r from-[#FFEED3] via-[#FFEED3] to-[#FFD8A5]"
+      >
+        <div class="details w-2/4 md:w-[90%] md:mx-auto">
+          <p
+            class="text-5xl text-orange-500 font-medium text-start capitalize md:text-center"
+          >
+            Find your astrological guidance today
+          </p>
+          <button
+            class="mr-auto md:mx-auto capitalize md:font-medium flex items-center justify-center mt-8 shadow-btnShadow2 gap-2 bg-orange-600 text-white px-8 py-3 rounded-full"
+          >
+            Book session
+          </button>
+        </div>
+        <img
+          src="./images/tantra.png"
+          class="mr-20 md:mx-auto md:object-contain"
+          alt=""
+        />
+      </div>
+    </section>
+    <section
+      class="hero overflow-hidden w-screen max-w-full h-max pt-8 px-20 md:px-4 bg-bottom-4 md:bg-bottom-5 bg-no-repeat md:pt-2"
+    >
+      <div
+        class="flex flex-row items-start justify-between gap-6 md:flex-col-reverse"
+      >
+        <div class="images w-1/2 md:w-full">
+          <div id="main-slider" class="slick-slider mb-4">
+            <div>
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Slide 1"
+                class="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Slide 1"
+                class="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Slide 1"
+                class="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/800x400"
+                alt="Slide 1"
+                class="w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
+          </div>
+
+          <!-- Thumbnail Slider -->
+          <div id="thumb-slider" class="slick-slider md:!hidden">
+            <div>
+              <img
+                src="https://via.placeholder.com/150x100"
+                alt="Thumb 1"
+                class="w-full h-auto rounded-md slick-thumb"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/150x100"
+                alt="Thumb 2"
+                class="w-full h-auto rounded-md slick-thumb"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/150x100"
+                alt="Thumb 3"
+                class="w-full h-auto rounded-md slick-thumb"
+              />
+            </div>
+            <div>
+              <img
+                src="https://via.placeholder.com/150x100"
+                alt="Thumb 4"
+                class="w-full h-auto rounded-md slick-thumb"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="w-1/2 md:w-full">
+          <span class="text-sm flex items-center justify-start gap-2"
+            ><a href="./index.html">Home</a
+            ><img src="./images/breadcrumbs-arrow.svg" alt="" /><a
+              href="./Products.html"
+              >Products</a
+            ><img src="./images/breadcrumbs-arrow.svg" alt="" /><a
+              class="underline"
+              href="./Child Astrology.html"
+              >Child Astrology</a
+            >
+          </span>
+          <div class="mt-4">
+            <h2 class="text-5xl font-medium">Child Astrology</h2>
+            <p class="mt-4 text-xl font-normal text-gray-500">
+              Excepteur aliquip in voluptate aute excepteur officia
+              reprehenderit cillum. Commodo ipsum cupidatat ad adipisicing do
+              minim ad nostrud sunt laboris. Nisi nostrud sunt aute
+              exercitation. Irure veniam labore ea in officia mollit nisi Lorem
+              minim Lorem id eiusmod. Tempor ad Lorem ea do commodo dolor in in
+              aliqua quis laboris in.
+            </p>
+            <div class="flex items-start justify-between mt-8">
+              <p class="text-3xl">₹ 4000</p>
+              <div class="flex items-center justify-between gap-2">
+                <p
+                  class="rounded-full text-xl text-orange-500 px-4 py-2 border border-orange-500 bg-orange-100"
+                >
+                  <i class="fas fa-star"></i>
+                  &nbsp
+                  <span class="">4.8</span>
+                </p>
+                <p
+                  class="rounded-full text-xl text-blue1 px-4 py-2 border border-blue1 bg-lightBlue1"
+                >
+                  <i class="fa-solid fa-comment-dots"></i>
+                  &nbsp
+                  <span class="">67 Reviews</span>
+                </p>
+              </div>
+            </div>
+            <div class="flex items-start justify-between mt-2">
+              <p class="text-3xl w-1/3 line-through">₹ 8000</p>
+              <p class="text-2xl text-end text-gray-500">
+                <span class="text-green1">90% </span>of the buyers recommend
+                this
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex my-8 items-center justify-between md:flex-col md:gap-8"
+          >
+            <button
+              class="px-8 py-3 bg-black text-xl font-semibold text-white rounded-xl"
+            >
+              Book your 1:1 Consultation Now
+            </button>
+            <div
+              class="actions flex text-2xl text-orange-500 items-center justify-between gap-4"
+            >
+              <span>
+                <i class="fa-regular fa-heart"></i>
+                109
+              </span>
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-share-nodes"></i>
+            </div>
+          </div>
+          <div class="details">
+            <div class="tabs flex items-center justify-start gap-4 py-3">
+              <p
+                id="tab_desc"
+                class="text-2xl font-semibold border-b-2 border-gray-700 pr-3 pl-1 cursor-pointer"
+              >
+                Description
+              </p>
+              <p
+                id="tab_reviews"
+                class="text-2xl font-semibold border-b-0 border-gray-700 pr-3 pl-1 cursor-pointer"
+              >
+                Reviews
+              </p>
+            </div>
+            <div id="block_desc">
+              <p class="font-normal text-xl text-gray-500">
+                Elit irure minim nulla consequat ut ut irure. Nulla nisi amet
+                elit cupidatat duis enim ut. Magna enim occaecat non tempor ea
+                exercitation commodo. Duis exercitation pariatur veniam tempor.
+              </p>
+
+              <ul class="list-disc pl-4 font-normal text-xl text-gray-500 py-3">
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+              </ul>
+            </div>
+            <div id="block_reviews" class="hidden">
+              <p class="font-normal text-xl text-gray-500">
+                Elit irure minim nulla consequat ut ut irure. Nulla nisi amet
+                elit cupidatat duis enim ut. Magna enim occaecat non tempor ea
+                exercitation commodo. Duis exercitation pariatur veniam tempor.
+              </p>
+
+              <ul class="list-disc pl-4 font-normal text-xl text-gray-500 py-3">
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+                <li>
+                  Sit quis fugiat in laborum ipsum anim pariatur voluptate
+                  tempor culpa nulla.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="px-20 my-8 md:px-8">
+      <h3 class="capitalize text-3xl mb-8">Similar Items you might like</h3>
+      <div class="grid grid-cols-3 gap-6 md:grid-cols-1">
+        <div
+          class="!flex flex-col justify-between gap-2 !h-[600px] shadow-md bg-white rounded-lg py-6 px-6"
+        >
+          <img
+            src="./images/services/1.png"
+            class="w-full h-[250px] object-cover"
+            alt=""
+          />
+          <div class="details">
+            <div
+              class="flex flex-row justify-between font-semibold text-xl items-center"
+            >
+              <h4 class="text-2xl">Child Astrology</h4>
+              <p class="text-end">₹ 4000</p>
+            </div>
+            <div class="flex flex-row justify-between my-2 items-start">
+              <p
+                class="flex text-sm font-normal items-center justify-start gap-2 text-gray-600"
+              >
+                <img src="./images/star-review.svg" alt="" />4.2
+                <span class="text-gray-400">&nbsp;(25 reviews)</span>
+              </p>
+              <p class="text-end text-green1 text-[17px] md:text-sm">
+                25% off on 1<sup>st</sup> booking
+              </p>
+            </div>
+            <div class="h-[1px] w-full my-2 bg-gray-400"></div>
+            <div class="description text-sm">
+              <p class="">
+                Get guidance to support their development & growth with
+                personalised astrological report
+              </p>
+              <p class="">Includes:</p>
+
+              <ol class="list-disc ml-4">
+                <li>Kundli and Divisional birth charts</li>
+                <li>horoscope analysis</li>
+                <li>Child's Ayurvedic Dosha +more</li>
+              </ol>
+            </div>
+          </div>
+          <div
+            class="!my-0 !important actions flex items-center justify-between md:gap-2"
+          >
+            <button
+              class="border-orange-400 rounded-lg text-base border font-medium w-[175px] h-[42px] text-orange-500"
+            >
+              View Details
+            </button>
+            <button
+              class="bg-orange-400 text-base rounded-lg font-medium w-[175px] h-[42px] text-white"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="!flex flex-col justify-between gap-2 !h-[600px] shadow-md bg-white rounded-lg py-6 px-6"
+        >
+          <img
+            src="./images/services/1.png"
+            class="w-full h-[250px] object-cover"
+            alt=""
+          />
+          <div class="details">
+            <div
+              class="flex flex-row justify-between font-semibold text-xl items-center"
+            >
+              <h4 class="text-2xl">Child Astrology</h4>
+              <p class="text-end">₹ 4000</p>
+            </div>
+            <div class="flex flex-row justify-between my-2 items-start">
+              <p
+                class="flex text-sm font-normal items-center justify-start gap-2 text-gray-600"
+              >
+                <img src="./images/star-review.svg" alt="" />4.2
+                <span class="text-gray-400">&nbsp;(25 reviews)</span>
+              </p>
+              <p class="text-end text-green1 text-[17px] md:text-sm">
+                25% off on 1<sup>st</sup> booking
+              </p>
+            </div>
+            <div class="h-[1px] w-full my-2 bg-gray-400"></div>
+            <div class="description text-sm">
+              <p class="">
+                Get guidance to support their development & growth with
+                personalised astrological report
+              </p>
+              <p class="">Includes:</p>
+
+              <ol class="list-disc ml-4">
+                <li>Kundli and Divisional birth charts</li>
+                <li>horoscope analysis</li>
+                <li>Child's Ayurvedic Dosha +more</li>
+              </ol>
+            </div>
+          </div>
+          <div
+            class="!my-0 !important actions flex items-center justify-between md:gap-2"
+          >
+            <button
+              class="border-orange-400 rounded-lg text-base border font-medium w-[175px] h-[42px] text-orange-500"
+            >
+              View Details
+            </button>
+            <button
+              class="bg-orange-400 text-base rounded-lg font-medium w-[175px] h-[42px] text-white"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="!flex flex-col justify-between gap-2 !h-[600px] shadow-md bg-white rounded-lg py-6 px-6"
+        >
+          <img
+            src="./images/services/1.png"
+            class="w-full h-[250px] object-cover"
+            alt=""
+          />
+          <div class="details">
+            <div
+              class="flex flex-row justify-between font-semibold text-xl items-center"
+            >
+              <h4 class="text-2xl">Child Astrology</h4>
+              <p class="text-end">₹ 4000</p>
+            </div>
+            <div class="flex flex-row justify-between my-2 items-start">
+              <p
+                class="flex text-sm font-normal items-center justify-start gap-2 text-gray-600"
+              >
+                <img src="./images/star-review.svg" alt="" />4.2
+                <span class="text-gray-400">&nbsp;(25 reviews)</span>
+              </p>
+              <p class="text-end text-green1 text-[17px] md:text-sm">
+                25% off on 1<sup>st</sup> booking
+              </p>
+            </div>
+            <div class="h-[1px] w-full my-2 bg-gray-400"></div>
+            <div class="description text-sm">
+              <p class="">
+                Get guidance to support their development & growth with
+                personalised astrological report
+              </p>
+              <p class="">Includes:</p>
+
+              <ol class="list-disc ml-4">
+                <li>Kundli and Divisional birth charts</li>
+                <li>horoscope analysis</li>
+                <li>Child's Ayurvedic Dosha +more</li>
+              </ol>
+            </div>
+          </div>
+          <div
+            class="!my-0 !important actions flex items-center justify-between md:gap-2"
+          >
+            <button
+              class="border-orange-400 rounded-lg text-base border font-medium w-[175px] h-[42px] text-orange-500"
+            >
+              View Details
+            </button>
+            <button
+              class="bg-orange-400 text-base rounded-lg font-medium w-[175px] h-[42px] text-white"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+        <div
+          class="!flex flex-col justify-between gap-2 !h-[600px] shadow-md bg-white rounded-lg py-6 px-6"
+        >
+          <img
+            src="./images/services/1.png"
+            class="w-full h-[250px] object-cover"
+            alt=""
+          />
+          <div class="details">
+            <div
+              class="flex flex-row justify-between font-semibold text-xl items-center"
+            >
+              <h4 class="text-2xl">Child Astrology</h4>
+              <p class="text-end">₹ 4000</p>
+            </div>
+            <div class="flex flex-row justify-between my-2 items-start">
+              <p
+                class="flex text-sm font-normal items-center justify-start gap-2 text-gray-600"
+              >
+                <img src="./images/star-review.svg" alt="" />4.2
+                <span class="text-gray-400">&nbsp;(25 reviews)</span>
+              </p>
+              <p class="text-end text-green1 text-[17px] md:text-sm">
+                25% off on 1<sup>st</sup> booking
+              </p>
+            </div>
+            <div class="h-[1px] w-full my-2 bg-gray-400"></div>
+            <div class="description text-sm">
+              <p class="">
+                Get guidance to support their development & growth with
+                personalised astrological report
+              </p>
+              <p class="">Includes:</p>
+
+              <ol class="list-disc ml-4">
+                <li>Kundli and Divisional birth charts</li>
+                <li>horoscope analysis</li>
+                <li>Child's Ayurvedic Dosha +more</li>
+              </ol>
+            </div>
+          </div>
+          <div
+            class="!my-0 !important actions flex items-center justify-between md:gap-2"
+          >
+            <button
+              class="border-orange-400 rounded-lg text-base border font-medium w-[175px] h-[42px] text-orange-500"
+            >
+              View Details
+            </button>
+            <button
+              class="bg-orange-400 text-base rounded-lg font-medium w-[175px] h-[42px] text-white"
+            >
+              Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer
+      class="mt-4 mb-0 flex justify-between flex-row w-full p-28 md:px-14 md:pb-8 bg-black"
+    >
+      <div
+        class="w-2/5 flex md:hidden items-start gap-8 flex-col justify-between"
+      >
+        <img src="./images/AsliAstro.png" class="" alt="" />
+        <p class="text-gray-400">
+          Get daily insight and daily insiration straight to your inbox
+        </p>
+        <form class="flex flex-row border-b-2 w-fit pb-1">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="border-none focus:outline-none pl-2 text-white bg-black py-1"
+          />
+          <img src="./images/right-arrow.svg" alt="" />
+        </form>
+      </div>
+      <div class="flex md:hidden flex-row justify-between mt-4 w-2/5">
+        <div class="w-1/5 flex items-start gap-2 flex-col justify-start">
+          <h2 class="text-white1 mb-4">Product</h2>
+          <a href="/" class="text-gray-400"> Services</a>
+          <a href="/" class="text-gray-400"> Shop</a>
+          <a href="/" class="text-gray-400"> Updates</a>
+          <a href="/" class="text-gray-400"> FAQ</a>
+        </div>
+        <div class="w-1/5 flex items-start gap-2 flex-col justify-start">
+          <h2 class="text-white1 mb-4">Company</h2>
+          <a href="/" class="text-gray-400"> About Us</a>
+          <a href="/" class="text-gray-400"> Careers</a>
+          <a href="/" class="text-gray-400"> Press</a>
+          <a href="/" class="text-gray-400"> Contact</a>
+          <a href="/" class="text-gray-400"> Blog</a>
+        </div>
+        <div class="w-1/5 flex items-start gap-2 flex-col justify-start">
+          <h2 class="text-white1 mb-4">Legal</h2>
+          <a href="/" class="text-gray-400"> Privacy Policy</a>
+          <a href="/" class="text-gray-400"> Terms of Service</a>
+        </div>
+      </div>
+      <div class="hidden md:block w-[100%]">
+        <img src="./images/AsliAstro.png" class="" alt="" />
+        <div class="flex flex-row justify-between mt-8 w-full">
+          <div class="w-1/3 flex items-start gap-2 flex-col justify-start">
+            <h2 class="text-white1 mb-4">Product</h2>
+            <a href="/" class="text-gray-400"> Services</a>
+            <a href="/" class="text-gray-400"> Shop</a>
+            <a href="/" class="text-gray-400"> Updates</a>
+            <a href="/" class="text-gray-400"> FAQ</a>
+          </div>
+          <div class="w-1/3 flex items-start gap-2 flex-col justify-start">
+            <h2 class="text-white1 mb-4">Company</h2>
+            <a href="/" class="text-gray-400"> About Us</a>
+            <a href="/" class="text-gray-400"> Careers</a>
+            <a href="/" class="text-gray-400"> Press</a>
+            <a href="/" class="text-gray-400"> Contact</a>
+            <a href="/" class="text-gray-400"> Blog</a>
+          </div>
+          <div class="w-1/3 flex items-start gap-2 flex-col justify-start">
+            <h2 class="text-white1 mb-4">Legal</h2>
+            <a href="/" class="text-gray-400"> Privacy Policy</a>
+            <a href="/" class="text-gray-400"> Terms of Service</a>
+          </div>
+        </div>
+        <form class="flex flex-row border-b-2 w-full pb-1 my-6">
+          <input
+            type="email"
+            placeholder="Email address"
+            class="border-none focus:outline-none pl-2 w-[90%] text-white bg-black py-1"
+          />
+          <img src="./images/right-arrow.svg" alt="" />
+        </form>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#main-slider").slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+          asNavFor: "#thumb-slider",
+          responsive: [
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true,
+              },
+            },
+          ],
+        });
+        $("#thumb-slider").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
+          arrows: true,
+          asNavFor: "#main-slider",
+          focusOnSelect: true,
+          variableWidth: true,
+        });
+        $("#tab_desc").on("click", function () {
+          $("#block_desc").removeClass("hidden");
+          $("#block_reviews").addClass("hidden");
+          $("#tab_desc").addClass("border-b-2").removeClass("border-b-0");
+          $("#tab_reviews").removeClass("border-b-2").addClass("border-b-0");
+        });
+
+        $("#tab_reviews").on("click", function () {
+          $("#block_reviews").removeClass("hidden");
+          $("#block_desc").addClass("hidden");
+          $("#tab_reviews").addClass("border-b-2").removeClass("border-b-0");
+          $("#tab_desc").removeClass("border-b-2").addClass("border-b-0");
+        });
+
+        $("#burger-menu-btn").on("click", function () {
+          $("#burger-menu").toggleClass("hidden");
+        });
+
+        $("#burger-menu_close_btn").on("click", function () {
+          $("#burger-menu").addClass("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
