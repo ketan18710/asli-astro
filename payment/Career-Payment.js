@@ -143,7 +143,7 @@ proceedToPaymentButton.addEventListener("click", function (event) {
 
 function initiateRazorpayPayment() {
   // Replace with your actual Razorpay key
-  const razorpayKey = "rzp_test_hugMDo9CN4UElb";
+  const razorpayKey = window.ENV.RAZORPAY_KEY;
 
   // Create a new Razorpay instance
   const rzp = new Razorpay({

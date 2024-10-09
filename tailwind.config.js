@@ -34,6 +34,7 @@ module.exports = {
     },
     backgroundPosition: {
       right: "right",
+      center: "center",
       top: "top",
       "bottom-4": " center calc(100% + 2rem) ",
       "bottom-5": " center calc(100% + 7rem) ",
@@ -61,6 +62,7 @@ module.exports = {
       },
       backgroundImage: {
         "bundle-asset-sm": "url('./images/bundle-asset-sm.png')",
+        ganpati: "url('./images/Ganpati.svg')",
       },
       boxShadow: {
         "3xl": "8px 8px 16px #292727, -8px -8px 16px #292727",
