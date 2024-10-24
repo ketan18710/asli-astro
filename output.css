@@ -1101,6 +1101,18 @@ video {
   height: 250;
 }
 
+.h-\[100px\] {
+  height: 100px;
+}
+
+.\!h-\[100px\] {
+  height: 100px !important;
+}
+
+.\!h-\[350px\] {
+  height: 350px !important;
+}
+
 .min-h-\[100vh\] {
   min-height: 100vh;
 }
@@ -1216,6 +1228,30 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[100px\] {
+  width: 100px;
+}
+
+.\!w-\[100px\] {
+  width: 100px !important;
+}
+
+.\!w-\[350px\] {
+  width: 350px !important;
+}
+
+.\!w-\[500px\] {
+  width: 500px !important;
+}
+
+.w-\[500px\] {
+  width: 500px;
+}
+
+.min-w-full {
+  min-width: 100%;
 }
 
 .max-w-4xl {
@@ -2684,6 +2720,18 @@ video {
   padding: 1.5rem;
 }
 
+.\!p-0 {
+  padding: 0px !important;
+}
+
+.\!p-1 {
+  padding: 0.25rem !important;
+}
+
+.\!p-2 {
+  padding: 0.5rem !important;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -3742,6 +3790,14 @@ video {
     width: 100%;
   }
 
+  .md\:\!w-\[full\] {
+    width: full !important;
+  }
+
+  .md\:\!w-full {
+    width: 100% !important;
+  }
+
   .md\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -3837,6 +3893,16 @@ video {
   .md\:py-\[4rem\] {
     padding-top: 4rem;
     padding-bottom: 4rem;
+  }
+
+  .md\:\!px-8 {
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+  }
+
+  .md\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .md\:pb-12 {
