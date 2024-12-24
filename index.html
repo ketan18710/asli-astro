@@ -890,7 +890,9 @@
           to conect with skilled individuals with experience, knowledge, and
           resources to tackle any challenge and deliver exceptional results
         </p>
-        <div class="grid md:hidden vignette-container grid-cols-5 gap-4">
+
+        
+         <div class="grid md:hidden vignette-container grid-cols-5 gap-4">
           <img
             src="./images/testimonial.png"
             class="w-[290px] h-[220px]"
@@ -966,6 +968,99 @@
           /> -->
          <div class="testimonials-slider !hidden md:!block">
           <div class="slide">
+            <img src="images/review1.png" class="w-full h-[220px] object-cover mx-auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/review2.png" class="w-full h-[220px] object-cover mx-auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/review3.png" class="w-full h-[220px] object-cover mx-auto" alt="" />
+          </div>
+          <div class="slide">
+            <img src="images/review4.png" class="w-full h-[220px] object-cover mx-auto" alt="" />
+          </div>
+        </div>
+      </div>       
+        
+        
+        
+        
+        <!--         <div class="grid md:hidden vignette-container grid-cols-5 gap-4">
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px]"
+            alt=""
+          />
+        </div> -->
+        
+<!--         <div class="!hidden md:!block slider1">
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px] object-contain"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px] object-contain"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px] object-contain"
+            alt=""
+          />
+          <img
+            src="./images/testimonial.png"
+            class="w-[290px] h-[220px] object-contain"
+            alt=""
+          /> -->
+<!--          <div class="testimonials-slider !hidden md:!block">
+          <div class="slide">
             <img src="./images/testimonial.png" class="w-full h-[220px] object-cover mx-auto" alt="" />
           </div>
           <div class="slide">
@@ -978,7 +1073,7 @@
             <img src="./images/testimonial.png" class="w-full h-[220px] object-cover mx-auto" alt="" />
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <section
@@ -1116,7 +1211,8 @@
         background: none !important;
       }
     </style> -->
-        <style>
+    
+<!--         <style>
       .slick-dots {
         display: flex;
         justify-content: center;
@@ -1185,6 +1281,93 @@
 
       .testimonials-slider .slick-next {
         right: -25px;
+      }
+    </style>
+  </body>
+</html>
+ -->
+
+    <style>
+      .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin: -2rem 0 !important;
+        padding: 1rem 0;
+        list-style-type: none;
+      }
+      .slick-dots li {
+        margin: 0 0.25rem;
+      }
+      .slick-dots button {
+        display: block;
+        width: 1rem !important;
+        height: 0.5rem !important;
+        padding: 0;
+        border: none;
+        border-radius: 0% !important;
+        background-color: rgba(0, 0, 0, 0.18) !important;
+        text-indent: -9999px;
+      }
+      .slick-dots li.slick-active button {
+        background-color: #d96200 !important;
+      }
+
+      .slick-track {
+        background: none !important;
+      }
+
+      .testimonials-slider {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+      }
+
+      .testimonials-slider .slide {
+        padding: 0 10px;
+        box-sizing: border-box;
+      }
+
+      .testimonials-slider .slick-list {
+        margin: 0 -10px;
+      }
+
+      .testimonials-slider .slick-track {
+        display: flex !important;
+        align-items: center;
+      }
+
+      .testimonials-slider .slick-prev,
+      .testimonials-slider .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        background: rgba(0,0,0,0.5);
+        border-radius: 50%;
+        color: white;
+        border: none;
+      }
+
+      .testimonials-slider .slick-prev {
+        left: -25px;
+      }
+
+      .testimonials-slider .slick-next {
+        right: -25px;
+      }
+
+      .vignette-container img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+
+      .testimonials-slider .slide img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
       }
     </style>
   </body>
