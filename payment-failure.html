@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Failed - Asli Astro</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo-black.png" />
+    <link href="../output.css" rel="stylesheet" />
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const burgerMenu = document.querySelector(".burger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        // Add a click event listener to the burger menu button
+        document
+          .getElementById("burger-menu-btn")
+          .addEventListener("click", function () {
+            document.getElementById("burger-menu").classList.toggle("hidden");
+          });
+
+        // Add a click event listener to the burger menu close button
+        document
+          .getElementById("burger-menu_close_btn")
+          .addEventListener("click", function () {
+            document.getElementById("burger-menu").classList.add("hidden");
+          });
+      });
+    </script>
+    <style>html, body {
+      height: 100%;
+      margin: 0;
+    }
+    
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .container {
+      flex: 1;
+    }
+    
+    footer {
+      margin-top: auto;
+    }
+    </style>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,41,500,501,600,601,700,701,1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-orange-100">
+    <!-- Header -->
+    <header class="w-[80vw] h-[8vh] m-auto py-4 flex items-center justify-between md:hidden">
+      <div class="flex items-center">
+        <a href="../2025-Astrology.html" class="mr-4">
+          <i class="fa-solid fa-arrow-left text-black text-2xl"></i>
+        </a>
+        <div class="logo">
+          <a href="../2025-Astrology.html">
+            <img
+              src="../images/logo-black.png"
+              class="mb-2 text-black"
+              alt="logo"
+              srcset=""
+            />
+          </a>
+        </div>
+      </div>
+      <nav class="text-black1 gap-4 flex items-center justify-between">
+        <a href="#shop">Shop</a>
+        <a href="#block_reviews">Testimonials</a>
+        <a href="../contact-us.html">Contact</a>
+        <button
+          class="free-session text-white bg-black1 rounded-[35px] py-2 px-3 border border-black1 shadow-3xl"
+        >
+          Claim Your 2025 Astro Report
+        </button>
+      </nav>
+    </header>
+    <header class="hidden mt-2 md:flex items-center justify-between px-4">
+      <div class="flex items-center justify-start gap-2">
+        <a href="../2025-Astrology.html" class="mr-4">
+          <i class="fa-solid fa-arrow-left text-black text-2xl"></i>
+        </a>
+        <i
+          class="fa-solid fa-bars cursor-pointer text-3xl text-black"
+          id="burger-menu-btn"
+        ></i>
+        <img src="../images/logo-black.png" alt="" />
+      </div>
+      <button
+        class="free-session ml-auto bg-black1 text-white rounded-[35px] py-2 px-3 border border-black1 shadow-3xl"
+      >
+        Claim Your Free Session
+      </button>
+    </header>
+    <div
+      id="burger-menu"
+      class="absolute top-0 left-0 w-4/6 h-screen bg-black1 hidden"
+    >
+      <div class="flex items-center justify-start gap-4 text-white p-4 mt-4">
+        <i
+          id="burger-menu_close_btn"
+          class="fa-solid fa-xmark text-4xl cursor-pointer"
+        ></i>
+        <a href="../2025-Astrology.html">
+          <img
+            src="../images/logo-black.png"
+            class="mb-2 text-black"
+            alt="logo"
+            srcset=""
+          />
+        </a>
+      </div>
+      <div class="w-full my-4 border-b-2 border-white border-opacity-50"></div>
+      <nav class="grid grid-cols-1 gap-4 mt-[5rem] px-8">
+        <span
+          class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+        >
+          <a class="w-full text-xl py-2" href="#shop">Shop</a>
+          <i class="fa-solid text-2xl fa-arrow-right"></i>
+        </span>
+        <span
+          class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+        >
+          <a class="w-full text-xl py-2" href="#block_reviews">Testimonials</a>
+          <i class="fa-solid text-2xl fa-arrow-right"></i>
+        </span>
+        <span
+          class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+        >
+          <a class="w-full text-xl py-2" href="../2025-Astrology.html">Contact</a>
+          <i class="fa-solid text-2xl fa-arrow-right"></i>
+        </span>
+        <button
+          class="free-session md:text-[14px] text-white my-8 bg-black1 rounded-[35px] py-3 px-4 border border-white border-opacity-50 shadow-3xl"
+        >
+          Claim Your Free Session
+        </button>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mx-auto text-center py-20">
+      <h1 class="text-4xl font-bold text-black1">opps!</h1>
+      <h2 class="text-3xl font-bold text-black1 mt-4">YOUR REGISTRATION IS NOT COMPLETED YET!</h2>
+      <p class="mt-4 text-lg text-black1"> your payment is failed, please try again later!👇</p>
+      
+     
+      <div class="mt-8">
+        <h1 class="text-black1 text-2xl mb-8">
+          If any money was debited,<br>
+          it would be auto-refunded to source
+        </h1>
+      </div>
+
+      <a 
+        href="../contact-us.html" 
+        target="_blank" 
+        style="background-color: #25D366; color: white; display: inline-block; padding: 12px 24px; border-radius: 9999px; width: 320px; font-weight: 500; font-size: 18px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+      >
+        <i class="fab fa-whatsapp mr-2"></i> Contact-us
+      </a>
+    </div>
+
+    <footer class="bg-black text-white py-8">
+      <div class="footer-container max-w-6xl mx-auto px-4">
+          <div class="footer-content flex justify-between items-center">
+              <!-- Logo Section -->
+              <div class="logo-section">
+                  <img src="../images/AsliAstro.png" alt="AsliAstro Logo" class="mb-4" />
+              </div>
+              <!-- Links Section -->
+              <div class="footer-links flex gap-8 ml-auto pr-1">
+                  <!-- Product Column -->
+                  <div class="footer-column">
+                      <!-- <h3 class="font-bold mb-2">Product</h3>
+                      <ul>
+                          <li><a href="/services" class="hover:underline">Services</a></li>
+                      </ul> -->
+                  </div>
+                  <!-- Company Column -->
+                  <div class="footer-column">
+                      <h3 class="font-bold mb-2">Company</h3>
+                      <ul>
+                          <li><a href="about-us.html" class="hover:underline">About Us</a></li>
+                          <li><a href="contact-us.html" class="hover:underline">Contact</a></li>
+                      </ul>
+                  </div>
+                  <!-- Legal Column -->
+                  <div class="footer-column">
+                      <h3 class="font-bold mb-2">Legal</h3>
+                      <ul>
+                          <li><a href="privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
+                          <li><a href="terms-condition.html" class="hover:underline">Terms of Service</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html> 

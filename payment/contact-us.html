@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Hotjar Tracking Code for https://ephemeral-malasada-31f19b.netlify.app/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5269132,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Asli Astro</title>
+    <link rel="icon" type="image/x-icon" href="../../../images/logo-black.png" />
+    <link href="../../../output.css" rel="stylesheet" />
+    <script src="./Contact-form.js" defer></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const burgerMenu = document.querySelector(".burger-menu");
+        const mobileMenu = document.querySelector(".mobile-menu");
+
+        // Add a click event listener to the burger menu button
+        document
+          .getElementById("burger-menu-btn")
+          .addEventListener("click", function () {
+            document.getElementById("burger-menu").classList.toggle("hidden");
+          });
+
+        // Add a click event listener to the burger menu close button
+        document
+          .getElementById("burger-menu_close_btn")
+          .addEventListener("click", function () {
+            document.getElementById("burger-menu").classList.add("hidden");
+          });
+      });
+    </script>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@200,201,300,301,400,401,500,501,600,601,700,701,1,2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-orange-100">
+    <!-- Header -->
+    <header
+      class="w-[80vw] h-[10vh] m-auto py-8 flex items-center justify-between md:hidden"
+    >
+      <div class="logo">
+        <a href="../index.html">
+          <img
+            src="../images/AsliAstro -black.png"
+            class="mb-4 text-black"
+            alt="logo"
+            srcset=""
+          />
+        </a>
+      </div>
+      <nav class="text-black1 gap-8 flex items-center justify-between">
+        <a href="#shop">Shop</a>
+        <a href="#block_reviews">Testimonials</a>
+        <a href="contact-us.html">Contact</a>
+        <button
+          class="free-session text-white bg-black1 rounded-[35px] py-3 px-4 border border-black1 shadow-3xl"
+        >
+          Claim Your 2025 Astro Report
+        </button>
+      </nav>
+    </header>
+    <header class="hidden mt-4 md:flex items-center justify-between px-8">
+      <div class="flex items-center justify-start gap-4">
+        <i
+          class="fa-solid fa-bars cursor-pointer text-4xl text-black"
+          id="burger-menu-btn"
+        ></i>
+        <img src="../images/logo-black.png" alt="" />
+      </div>
+      <button
+        class="free-session ml-auto bg-black1 text-white rounded-[35px] py-3 px-4 border border-black1 shadow-3xl"
+      >
+        Claim Your Free Session
+      </button>
+    </header>
+    <div
+      id="burger-menu"
+      class="absolute top-0 left-0 w-4/6 h-screen bg-black1 hidden"
+    >
+      <div class="flex items-center justify-start gap-4 text-white p-4 mt-4">
+        <i
+          id="burger-menu_close_btn"
+          class="fa-solid fa-xmark text-4xl cursor-pointer"
+        ></i>
+        <a href="../index.html">
+          <img
+            src="../images/AsliAstro.png"
+            class="mb-2 text-black"
+            alt="logo"
+            srcset=""
+          />
+        </a>
+      </div>
+      <div class="w-full my-4 border-b-2 border-white border-opacity-50"></div>
+      <nav class="grid grid-cols-1 gap-4 mt-[5rem] px-8">
+        <span
+          class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+        >
+          <a class="w-full text-xl py-2" href="#shop">Shop</a>
+          <i class="fa-solid text-2xl fa-arrow-right"></i>
+        </span>
+        <span
+          class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+        >
+          <a class="w-full text-xl py-2" href="#block_reviews">Testimonials</a>
+          <i class="fa-solid text-2xl fa-arrow-right"></i>
+        </span>
+        <span
+          class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
+        >
+          <a class="w-full text-xl py-2" href="./index.html">Contact</a>
+          <i class="fa-solid text-2xl fa-arrow-right"></i>
+        </span>
+        <button
+          class="free-session md:text-[14px] text-white my-8 bg-black1 rounded-[35px] py-3 px-4 border border-white border-opacity-50 shadow-3xl"
+        >
+          Claim Your Free Session
+        </button>
+      </nav>
+    </div>
+
+    <!-- Main Content -->
+    <section class="main-container px-4 pt-8 bg-orange-100">
+      <div class="content contact-content">
+        <h1 class="text-5xl mb-8 text-orange-500">Contact Us</h1>
+
+        <div class="section">
+          <h2 class="text-3xl mb-2 text-black font-semibold">Get in Touch</h2>
+          <p class="text-xl mb-4">
+            Have questions? We're here to help! Reach out to us through any of
+            the following channels:
+          </p>
+        </div>
+
+        <div class="section">
+          <h2 class="text-3xl mb-4 text-orange-500 font-semibold">
+            Contact Information:
+          </h2>
+          <div class="contact-info">
+            <p>
+              <strong class="text-orange-500 text-xl"
+                ><i class="fa-solid fa-envelope"></i> Email:
+              </strong>
+              support@asliastro.com
+            </p>
+            <p>
+              <strong class="text-orange-500 text-xl"
+                ><i class="fa-solid fa-phone"></i> Phone:</strong
+              >
+              +91 9971996179
+            </p>
+            <p>
+              <strong class="text-orange-500 text-xl"
+                ><i class="fa-solid fa-location-pin"></i> Address:</strong
+              >
+              Forum, DLF Cyber City, DLF Phase 3, Sector 24, Gurugram, Haryana
+              122002
+            </p>
+            <p>
+              <strong class="text-orange-500 text-xl"
+                ><i class="fa-solid fa-clock"></i> Hours:</strong
+              >
+              Mon - Sat: 9:00 AM - 6:00 PM
+            </p>
+          </div>
+        </div>
+
+        <div class="section">
+          <h2 class="text-3xl mt-4 mb-8 text-orange-500 font-semibold">
+            Send us a Message
+          </h2>
+          <form
+            class="mb-2 border border-gray-500 rounded-lg"
+            id="contact-form"
+          >
+            <div class="space-y-3">
+              <div class="form-group p-3 rounded">
+                <div class="mt-3">
+                  <label class="block text-sm font-medium mb-1" for="name">
+                    Name <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    class="input-field w-full rounded-md text-gray-800 h-9"
+                  />
+                </div>
+
+                <div class="mt-3">
+                  <label class="block text-sm font-medium mb-1" for="email">
+                    Email <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    class="input-field w-full rounded-md text-gray-800 h-9"
+                  />
+                </div>
+
+                <div class="mt-3">
+                  <label class="block text-sm font-medium mb-1" for="phone">
+                    Phone Number <span class="text-red-500">*</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="input-field w-full rounded-md text-gray-800 h-9"
+                  />
+                </div>
+
+                <div class="mt-3">
+                  <label class="block text-sm font-medium mb-1" for="message">
+                    Message <span class="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="input-field w-full rounded-md text-gray-800 h-40"
+                  ></textarea>
+                </div>
+
+                <div class="mt-3">
+                  <button
+                    type="submit"
+                    class="submit-btn bg-orange-600 text-white font-medium px-4 py-2 rounded-md hover:bg-orange-700 focus:outline-none focus:ring focus:ring-orange-200"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3>Product</h3>
+                        <ul>
+                            <li><a href="/services">Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Legal</h3>
+                        <ul>
+                            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                            <li><a href="terms-condition.html">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     -->
+     <footer class="bg-black text-white py-8">
+      <div class="footer-container max-w-6xl mx-auto px-4">
+          <div class="footer-content flex justify-between items-center">
+              <!-- Logo Section -->
+              <div class="logo-section">
+                  <img src="../images/AsliAstro.png" alt="AsliAstro Logo" class="mb-4" />
+              </div>
+              <!-- Links Section -->
+              <div class="footer-links flex gap-8 ml-auto pr-1">
+                  <!-- Product Column -->
+                  <div class="footer-column">
+                      <!-- <h3 class="font-bold mb-2">Product</h3>
+                      <ul>
+                          <li><a href="/services" class="hover:underline">Services</a></li>
+                      </ul> -->
+                  </div>
+                  <!-- Company Column -->
+                  <div class="footer-column">
+                      <h3 class="font-bold mb-2">Company</h3>
+                      <ul>
+                          <li><a href="about-us.html" class="hover:underline">About Us</a></li>
+                          <li><a href="contact-us.html" class="hover:underline">Contact</a></li>
+                      </ul>
+                  </div>
+                  <!-- Legal Column -->
+                  <div class="footer-column">
+                      <h3 class="font-bold mb-2">Legal</h3>
+                      <ul>
+                          <li><a href="privacy-policy.html" class="hover:underline">Privacy Policy</a></li>
+                          <li><a href="terms-condition.html" class="hover:underline">Terms of Service</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+</body>
+</html> 
+
+
