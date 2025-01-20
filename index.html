@@ -506,10 +506,10 @@
         <div class="timer-section">
           <p class="attention-text">⚡ATTENTION! 2025 ANALYSIS IS CLOSING SOON!</p>
           <div class="timer">
-            <div class="circle">
+            <!-- <div class="circle">
               <span id="days">00</span>
               <small>Days</small>
-            </div>
+            </div> -->
             <div class="circle">
               <span id="hours">00</span>
               <small>Hours</small>
@@ -552,7 +552,7 @@
           <nav class="text-white gap-8 flex items-center justify-between">
             <!-- <a href="Products.html">Shop</a> -->
             <a  onclick="showReviews()" href="#testimonials">Testimonials</a>
-            <a href="Contact-us.html">Contact</a>
+            <a href="./ContactForm.html">Contact</a>
             <button
               class="free-session bg-black1 rounded-[35px] py-3 px-4 border border-black1 shadow-3xl"
             >
@@ -619,7 +619,7 @@
             <span
               class="w-full border-b-2 border-white border-opacity-50 text-white flex items-center justify-between"
             >
-              <a class="w-full text-xl py-2" href="Contact-us.html">Contact</a>
+              <a class="w-full text-xl py-2" href="./ContactForm.html">Contact</a>
               <i class="fa-solid text-2xl fa-arrow-right"></i>
             </span>
             <button
@@ -652,7 +652,7 @@
         >
             <a class="flex items-center justify-center gap-4  md:text-xl" href="./payment/2025-Astrology-Payment.html">
               
-              Know your 2024 now <i class="fas fa-arrow-right text-2xl md:text-xl"></i></a
+              Know your 2025 now <i class="fas fa-arrow-right text-2xl md:text-xl"></i></a
             >
           </button>
         </div>
@@ -765,10 +765,12 @@
                 <i class="fas fa-check-circle text-green-500"></i>
               </div>
 
-              <button class="w-full py-6 bg-orange-500 hover:bg-orange-400 active:scale-95 transform transition-all duration-200 text-xl font-bold text-white rounded-xl flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
-                <i class="fas fa-lock"></i>
-                <a href="./payment/2025-Astrology-Payment.html">Secure Your 2025 Reading Now</a>
-              </button>
+              <a href="./payment/2025-Astrology-Payment.html">
+                  <button class="w-full py-6 bg-orange-500 hover:bg-orange-400 active:scale-95 transform transition-all duration-200 text-xl font-bold text-white rounded-xl flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+                  <i class="fas fa-lock"></i>
+                  Secure Your 2025 Reading Now
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -1243,20 +1245,21 @@
     </section>
 
     <div
-      class="my-8 px-16 md:px-8 md:py-8 flex items-center justify-between md:flex-col gap-2 w-[90%] md:h-fit h-[300px] rounded-xl mx-auto bg-gradient-to-r from-[#FFEED3] via-[#FFEED3] to-[#FFD8A5]"
+      class="my-8 px-16 md:px-4 md:py-8 flex items-center justify-between md:flex-col gap-2 md:gap-6 w-[90%] md:h-max h-[300px] rounded-xl mx-auto bg-gradient-to-r from-[#FFEED3] via-[#FFEED3] to-[#FFD8A5]"
     >
       <div class="details w-2/4 md:w-[90%] md:mx-auto">
         <p
-          class="text-5xl text-orange-500 font-medium text-start capitalize md:text-center"
+          class="text-5xl text-orange-500 font-medium mb-8  text-start capitalize md:text-center"
         >
           Find your astrological guidance today
         </p>
-        <button
-          class="mr-auto md:mx-auto capitalize md:font-medium flex items-center justify-center mt-8 shadow-btnShadow2 gap-2 bg-orange-600 text-white px-8 py-3 rounded-full"
-        >
-          <a href="./payment/2025-Astrology-Payment.html">Book session</a>
-        </button>
-      </div>
+        <a href="./payment/2025-Astrology-Payment.html">
+            <button class="w-full py-6 px-7 bg-orange-500 hover:bg-orange-400 active:scale-95 transform transition-all duration-200 text-xl md:text-lg font-bold text-white rounded-xl flex items-center justify-center gap-2 shadow-lg hover:shadow-xl">
+            <i class="fas fa-lock"></i>
+            Secure Your 2025 Reading Now
+          </button>
+        </a>
+    </div>
       <img
         src="./images/tantra.png"
         class="mr-20 md:mx-auto md:object-contain"
@@ -1280,7 +1283,7 @@
         <div class="w-1/5 flex items-start gap-2 flex-col justify-start">
           <h2 class="text-white1 mb-4">Company</h2>
           <a href="about-us.html" class="text-gray-400"> About Us</a>
-          <a href="contact-us.html" class="text-gray-400"> Contact</a>
+          <a href="././ContactForm.html" class="text-gray-400"> Contact</a>
         </div>
         <div class="w-1/5 flex items-start gap-2 flex-col justify-start">
           <h2 class="text-white1 mb-4">Legal</h2>
@@ -1302,7 +1305,7 @@
           <div class="w-1/3 flex items-start gap-2 flex-col justify-start">
             <h2 class="text-white1 mb-4">Company</h2>
             <a href="about-us.html" class="text-gray-400"> About Us</a>
-            <a href="Contact-us.html" class="text-gray-400"> Contact</a>
+            <a href="./ContactForm.html" class="text-gray-400"> Contact</a>
           </div>
           <div class="w-1/3 flex items-start gap-2 flex-col justify-start">
             <h2 class="text-white1 mb-4">Legal</h2>
@@ -1677,7 +1680,7 @@
         <span id="close-popup" class="close">&times;</span>
         <h2>Wait! We have a confession.</h2>
         <p>You can join our WhatsApp group for free daily horoscope guidance.</p>
-        <button id="join-button" class="join-button">Join now</button>
+        <button id="join-button" class="join-button flex items-center justify-center mx-auto gap-2"><i class="fa-brands fa-whatsapp"></i>Join now</button>
       </div>
     </div>
   <script>
@@ -1731,8 +1734,9 @@
 
 <script>
   // Set the date we're counting down to (24 hours from now)
-  const countDownDate = new Date("Jan 25, 2025 15:37:25").getTime();
-
+  const countDownDate = new Date(Date.now() + 22 * 60 * 60 * 1000).getTime();
+  console.log(countDownDate,'countDownDate');
+  
   // Update the countdown every 1 second
   const x = setInterval(function() {
       // Get today's date and time
@@ -1748,7 +1752,7 @@
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
       // Display the results
-      document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
+      // document.getElementById("days").innerHTML = days < 10 ? "0" + days : days;
       document.getElementById("hours").innerHTML = hours < 10 ? "0" + hours : hours;
       document.getElementById("minutes").innerHTML = minutes < 10 ? "0" + minutes : minutes;
       document.getElementById("seconds").innerHTML = seconds < 10 ? "0" + seconds : seconds;
